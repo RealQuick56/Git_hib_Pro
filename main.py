@@ -11,7 +11,7 @@ import math
 class Widget(QtWidgets.QWidget):
     def __init__(self):
         super().__init__()
-        uic.loadUi('UI_figures_Git.ui', self)
+        uic.loadUi('UI.ui', self)
         self._im = QtGui.QImage(self.width(), self.height(), QtGui.QImage.Format_ARGB32)
         self._im.fill(QtGui.QColor("white"))
         self.pushButton.clicked.connect(self.draw)
